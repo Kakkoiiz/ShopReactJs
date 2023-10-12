@@ -1,0 +1,21 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@100;300;500;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --primary: #EF8D7C;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  text-rendering: optimizeSpeed;
+}
