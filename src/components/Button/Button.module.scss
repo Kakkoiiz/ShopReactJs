@@ -1,0 +1,112 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 5px;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: var(--font-family);
+  min-width: 50px;
+  cursor: pointer;
+  background-color: var(--white);
+  border: 1px solid transparent;
+  user-select: none;
+
+  &.disable {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+
+.icon + .title,
+.title + .icon {
+  margin-left: 4px;
+}
+
+.title {
+  white-space: nowrap;
+}
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  text-align: center;
+}
+
+// Button Types
+.rounded {
+  border-radius: 999px;
+  box-shadow: 0px 2px 8px rgb(0 0 0 / 6%);
+  border-color: rgba(22, 24, 35, 0.12);
+
+  &:hover {
+    border-color: rgba(22, 24, 35, 0.2);
+    background-color: rgba(22, 24, 35, 0.03);
+  }
+}
+
+.primary {
+  color: var(--white);
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.outline {
+  color: var(--primary);
+  border-color: currentColor;
+
+}
+
+.link {
+  font-weight: 500;
+}
+
+
+.text {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.box {
+  border-color: rgba(22, 24, 35, 0.15);
+  font-weight: 600;
+}
+
+.menuItem {
+  padding: 12px 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-menu);
+  border-bottom: 1px solid #f5f4f4;
+  text-align: left;
+  display: block;
+
+  &:hover {
+    color: var(--black);
+  }
+}
+// Button sizes
+.small {
+  min-width: 88px;
+  padding: 4px 16px;
+}
+
+.large {
+  padding: 14px 16px;
+  min-width: 140px;
+}
+
+.enlarge {
+  transition: transform 0.3s ease;
+}
+
+.enlarge:hover {
+  transform: scale(1.1);
+}
+
+.headerMenu {
+  color: black;
+  cursor: default;
+}

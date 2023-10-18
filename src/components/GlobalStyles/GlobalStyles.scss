@@ -2,15 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@100;300;500;700&family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root {
-    --primary: #EF8D7C;
+  --primary: #F8F9FA;
+  --black: #000;
+  --text-menu: #606775;
+  --default-layout-header-height: 80px;
 }
 
 * {
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
@@ -18,4 +23,13 @@ body {
   font-size: 1.6rem;
   line-height: 1.8;
   text-rendering: optimizeSpeed;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+ul {
+  list-style: none;
 }

@@ -1,0 +1,32 @@
+.wrapper {
+    height: var(--default-layout-header-height);
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 4px 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    width: 1280px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// Logo
+.logo {
+    
+}
+
+.logo-img {
+    max-width: 200px;
+}
+
+// Menu
+
+.site-wrap {
+    width: 650px;
+    height: var(--default-layout-header-height);
+}
+
+
