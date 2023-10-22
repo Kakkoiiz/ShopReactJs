@@ -14,19 +14,56 @@
 }
 
 // Logo
-.logo {
-    
-}
-
 .logo-img {
     max-width: 200px;
 }
 
 // Menu
-
 .site-wrap {
-    width: 650px;
+    display: flex;
+    align-items: center;
     height: var(--default-layout-header-height);
+}
+
+// Search
+.search {
+    position: relative;
+    height: 100%;
+    width: 570px;
+    
+    input {
+        height: 100%;
+        width: 94%;
+        padding-right: 70px;
+        font-size: 1.6rem;
+        border: none;
+        outline: none;
+        color: var(--text-color);
+
+    }
+
+    &::after {
+        content: "";
+        bottom: 21px;
+        left: 0;
+        position: absolute;
+        width: 97%;
+        height: 1px;
+        background-color: var(--text-color);
+    }
+}
+
+
+.close {
+    border: none;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background-color: transparent;
+    
+    &:hover {
+        cursor: pointer;
+        color: var(--black);
+    }
 }
 
 

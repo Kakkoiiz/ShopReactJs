@@ -1,0 +1,13 @@
+.menu-title::before {
+    content: "";
+    top: 20px;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background: var(--text-menu);
+    transition: .4s ease-in-out;
+}
+
+.menu-title.active::before {
+    width: 20px;
+}

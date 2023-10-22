@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind';
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown, faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown, faCircleXmark, faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
 
 import styles from './Header.module.scss';
 import images from '~/assets/images';
@@ -163,6 +164,35 @@ const MENU_ITEMS = [
     title: 'PAGES',
     icon: <FontAwesomeIcon icon={faAngleDown} />,
     to: '#',
+    children: [
+      {data: [
+        {
+          code: 'About Us',
+          title: 'About Us',
+          to: '/blog'
+        },
+        {
+          code: 'Read PDF Book Demo',
+          title: 'Read PDF Book Demo',
+          to: '/blog'
+        },
+        {
+          code: 'Publisher Profile Page',
+          title: 'Publisher Profile Page',
+          to: '/blog'
+        },
+        {
+          code: 'All Authors Page',
+          title: 'All Authors Page',
+          to: '/blog'
+        },
+        {
+          code: 'All Book Publishers',
+          title: 'All Book Publishers',
+          to: '/blog'
+        },
+      ],},
+    ],
   },
   {
     title: 'CONTACT US',
@@ -171,6 +201,15 @@ const MENU_ITEMS = [
 ];
 
 function Header() {
+  const [isSearchVisible, setSearchVisible] = useState(false);
+
+  const toggleSearch = () => {
+    setSearchVisible(!isSearchVisible);
+  };
+
+  const closeSearch = () => {
+    setSearchVisible(false);
+  };
   return (
     <header className={cx('wrapper')}>
       <div className={cx('inner')}>
@@ -178,13 +217,21 @@ function Header() {
           <img className={cx('logo-img')} src={images.logo} alt="Bookstore" />
         </div>
         <div className={cx('site-wrap')}>
-          <MenuItem items={MENU_ITEMS} />
+          {isSearchVisible ? (
+            <div className={cx('search')}>
+              <input placeholder='Search by Title, Category or ISBN' spellCheck={false} />
+              <button className={cx('close')} onClick={closeSearch}>
+                <FontAwesomeIcon icon={faCircleXmark}/>
+              </button>
+            </div>
+          ) : null}
+          {!isSearchVisible && <MenuItem items={MENU_ITEMS} visible={true} />}
         </div>
         <div className={cx('action')}>
           <Button primary enlarge>
             <FontAwesomeIcon icon={faUser} />
           </Button>
-          <Button primary enlarge>
+          <Button search enlarge onClick={toggleSearch}>
             <FontAwesomeIcon icon={faSearch} />
           </Button>
         </div>

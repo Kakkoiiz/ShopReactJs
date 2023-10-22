@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   padding: 9px 5px;
+  margin-right: 8px;
   border-radius: 4px;
   font-size: 1.6rem;
   font-weight: 700;
@@ -47,9 +48,14 @@
 }
 
 .primary {
-  color: var(--white);
+  color: var(--black);
   background-color: var(--primary);
   border-color: var(--primary);
+}
+
+.search {
+  color: var(--white);
+  background-color: var(--search-color);
 }
 
 .outline {
@@ -73,6 +79,8 @@
   border-color: rgba(22, 24, 35, 0.15);
   font-weight: 600;
 }
+
+
 
 .menuItem {
   padding: 12px 5px;
