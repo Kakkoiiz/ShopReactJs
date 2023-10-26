@@ -2,7 +2,7 @@ import classNames from 'classnames/bind';
 import Tippy from '@tippyjs/react/headless';
 
 import styles from './MenuChild.module.scss';
-import { Wrapper as PopperWrapper } from '~/components/MenuItem/MenuLink/Popper';
+import { Wrapper as PopperWrapper } from '~/components/Menu/MenuItem/Popper';
 import MenuChildItem from './MenuChildItem';
 
 const cx = classNames.bind(styles);

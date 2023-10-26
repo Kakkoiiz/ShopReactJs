@@ -1,0 +1,30 @@
+.menu-item {
+  padding: 15px;
+  font-weight: 500;
+
+  &.active {
+    &.menu-item::before{
+      width: 25px;
+    }
+  }
+}
+
+.menu-item::before {
+  content: '';
+  top: 20px;
+  position: absolute;
+  height: 1.5px;
+  width: 0;
+  background: var(--text-menu);
+  transition: 0.4s ease-in-out;
+}
+
+
+.menu-item:hover::before {
+  width: 25px;
+}
+
+
+.title {
+  margin-right: 10px;
+}

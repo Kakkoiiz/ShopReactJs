@@ -6,7 +6,7 @@ import { faAngleDown, faCircleXmark, faSearch, faUser } from '@fortawesome/free-
 import styles from './Header.module.scss';
 import images from '~/assets/images';
 import Button from '~/components/Button';
-import MenuItem from '~/components/MenuItem';
+import Menu from '~/components/Menu';
 
 const cx = classNames.bind(styles);
 
@@ -18,7 +18,6 @@ const MENU_ITEMS = [
   {
     title: 'MEGA MENU',
     icon: <FontAwesomeIcon icon={faAngleDown} />,
-    to: '#',
     children: [
       {
         data: [
@@ -110,48 +109,48 @@ const MENU_ITEMS = [
   {
     title: 'SHOP',
     icon: <FontAwesomeIcon icon={faAngleDown} />,
-    to: '#',
+    to: '/shop',
     children: [
       {data: [
         {
           code: 'simple product',
           title: 'Simple Product',
-          to: '/blog'
+          to: '/shop'
         },
         {
           code: 'Read PDF Book Demo',
           title: 'Read PDF Book Demo',
-          to: '/blog'
+          to: '/shop'
         },
         {
           code: 'Variable (DVD/Kindle/Paper)',
           title: 'Variable (DVD/Kindle/Paper)',
-          to: '/blog'
+          to: '/shop'
         },
         {
           code: 'External Product',
           title: 'External Product',
-          to: '/blog'
+          to: '/shop'
         },
         {
           code: 'Free Download Product',
           title: 'Free Download Product',
-          to: '/blog'
+          to: '/shop'
         },
         {
           code: 'Bundled Product',
           title: 'Bundled Product',
-          to: '/blog'
+          to: '/shop'
         },
         {
           code: 'Author Profile Page',
           title: 'Author Profile Page',
-          to: '/blog'
+          to: '/shop'
         },
         {
           code: 'Publisher Profile Page',
           title: 'Publisher Profile Page',
-          to: '/blog'
+          to: '/shop'
         },
       ],},
     ],
@@ -163,7 +162,6 @@ const MENU_ITEMS = [
   {
     title: 'PAGES',
     icon: <FontAwesomeIcon icon={faAngleDown} />,
-    to: '#',
     children: [
       {data: [
         {
@@ -204,7 +202,7 @@ function Header() {
   const [isSearchVisible, setSearchVisible] = useState(false);
 
   const toggleSearch = () => {
-    setSearchVisible(!isSearchVisible);
+    setSearchVisible(true);
   };
 
   const closeSearch = () => {
@@ -224,8 +222,7 @@ function Header() {
                 <FontAwesomeIcon icon={faCircleXmark}/>
               </button>
             </div>
-          ) : null}
-          {!isSearchVisible && <MenuItem items={MENU_ITEMS} visible={true} />}
+          ) : <Menu items={MENU_ITEMS} visible={true}/>}
         </div>
         <div className={cx('action')}>
           <Button primary enlarge>
