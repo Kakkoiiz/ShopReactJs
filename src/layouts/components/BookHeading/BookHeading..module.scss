@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.title {
+    margin-top: 10px;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 2rem;
+    color: var(--text-color);
+}

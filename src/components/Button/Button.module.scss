@@ -8,7 +8,7 @@
   font-size: 1.6rem;
   font-weight: 700;
   font-family: var(--font-family);
-  min-width: 50px;
+  min-width: 45px;
   cursor: pointer;
   background-color: var(--white);
   border: 1px solid transparent;
@@ -37,11 +37,10 @@
 
 // Button Types
 
-
 .primary {
-  color: var(--black);
-  background-color: var(--primary);
-  border-color: var(--primary);
+  color: #121823;
+  font-weight: 500;
+  background-color: #F8F9FA;
 }
 
 .search {
@@ -56,29 +55,27 @@
   }
 }
 
-
 .menuItem {
   padding: 12px 5px;
+  margin: 0;
   font-size: 14px;
   font-weight: 600;
   color: var(--text-menu);
   border-bottom: 1px solid #f5f4f4;
   text-align: left;
   display: block;
+  border-radius: 0;
 
   &:hover {
     color: var(--black);
   }
 }
-// Button sizes
-.small {
-  min-width: 88px;
-  padding: 4px 16px;
-}
 
-.large {
-  padding: 14px 16px;
-  min-width: 140px;
+.sliderBtn {
+  border-radius: 8px;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 20px 40px;
 }
 
 .enlarge {
@@ -90,6 +87,26 @@
 }
 
 .headerMenu {
-  color: black;
+  color: var(--black);
   cursor: default;
+}
+
+.slideIcon {
+  color: var(--text-menu);
+  background-color: unset;
+  font-size: 4rem;
+  font-weight: 300;
+  padding: 0px 20px;
+
+  &:hover{
+    cursor: pointer;
+  }  
+}
+
+
+// size 
+
+.medium {
+  padding: 10px 40px;
+  font-size: 3rem;
 }

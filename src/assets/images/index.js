@@ -1,5 +1,5 @@
 const images = {
-    logo: 'https://hostacmee.space/demo/bookchoix/wp-content/themes/bookchoix/assets/img/bookchoix-logo.svg'
+    noImage: require('~/assets/images/no-img.png'),
 }
 
 export default images;

@@ -1,0 +1,58 @@
+{
+  "book": [
+    {
+      "id": 1,
+      "name": "Master of Photography – 2 Series Bundle",
+      "category": "Arts & Photography",
+      "authors": "Ellie Thomson, Henry",
+      "price": "20.00",
+      "discount": 28,
+      "image": "https://hostacmee.space/demo/bookchoix/wp-content/uploads/2023/02/celebration-of-freedom-572x764-1-550x680.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Master of Photography – 2 Series Bundle",
+      "category": "Arts & Photography",
+      "authors": "Ellie Thomson, Henry",
+      "price": "20.00",
+      "discount": 28,
+      "image": "https://hostacmee.space/demo/bookchoix/wp-content/uploads/2021/03/mastering-photography-572x764-1-550x680.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Master of Photography – 2 Series Bundle",
+      "category": "Arts & Photography",
+      "authors": "Ellie Thomson, Henry",
+      "price": "20.00",
+      "discount": 28,
+      "image": "https://hostacmee.space/demo/bookchoix/wp-content/uploads/2023/02/celebration-of-freedom-572x764-1-550x680.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Master of Photography – 2 Series Bundle",
+      "category": "Arts & Photography",
+      "authors": "Ellie Thomson, Henry",
+      "price": "20.00",
+      "discount": 28,
+      "image": "https://hostacmee.space/demo/bookchoix/wp-content/uploads/2023/02/celebration-of-freedom-572x764-1-550x680.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Master of Photography – 2 Series Bundle",
+      "category": "Arts & Photography",
+      "authors": "Ellie Thomson, Henry",
+      "price": "20.00",
+      "discount": 28,
+      "image": "https://hostacmee.space/demo/bookchoix/wp-content/uploads/2023/02/celebration-of-freedom-572x764-1-550x680.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Master of Photography – 2 Series Bundle",
+      "category": "Arts & Photography",
+      "authors": "Ellie Thomson, Henry",
+      "price": "23.00",
+      "discount": 28,
+      "image": "https://hostacmee.space/demo/bookchoix/wp-content/uploads/2023/02/celebration-of-freedom-572x764-1-550x680.jpg"
+    }
+  ]
+}

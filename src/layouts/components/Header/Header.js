@@ -6,7 +6,7 @@ import { faAngleDown, faCircleXmark, faSearch, faUser } from '@fortawesome/free-
 import styles from './Header.module.scss';
 import images from '~/assets/images';
 import Button from '~/components/Button';
-import Menu from '~/components/Menu';
+import Menu from './Menu';
 
 const cx = classNames.bind(styles);
 
@@ -222,7 +222,7 @@ function Header() {
                 <FontAwesomeIcon icon={faCircleXmark}/>
               </button>
             </div>
-          ) : <Menu items={MENU_ITEMS} visible={true}/>}
+          ) : <Menu items={MENU_ITEMS} />}
         </div>
         <div className={cx('action')}>
           <Button primary enlarge>

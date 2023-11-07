@@ -2,6 +2,7 @@ import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 import styles from './Button.module.scss';
 
+
 const cx = classNames.bind(styles);
 
 function Button({
@@ -12,9 +13,10 @@ function Button({
   text = false,
   disable = false,
   menuItem = false,
-  small = false,
-  large = false,
   headerMenu = false,
+  sliderBtn = false,
+  slideIcon = false,
+  medium = false,
   enlarge,
   children,
   className,
@@ -53,9 +55,10 @@ function Button({
     headerMenu,
     primary,
     menuItem,
+    sliderBtn,
+    slideIcon,
+    medium,
     disable,
-    small,
-    large,
     enlarge,
   });
 
